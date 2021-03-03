@@ -14,6 +14,10 @@ return [
         'v1' => [
             'basePath' => '@app/modules/v1',
             'class' => 'api\modules\v1\Module'
+        ],
+        'books' => [
+            'basePath' => '@app/modules/v1',
+            'class' => 'api\modules\books\Module'
         ]
     ],
     'components' => [        
@@ -36,12 +40,22 @@ return [
             'showScriptName' => false,
             'rules' => [
                 [
+					'pluralize'=>false,
                     'class' => 'yii\rest\UrlRule', 
-                    'controller' => 'v1/country',
-                    'tokens' => [
-                        '{id}' => '<id:\\w+>'
-                    ]
-                    
+                    'controller' => ['v1/country'],
+                ],
+                [
+					'pluralize'=>false,
+                    'class' => 'yii\rest\UrlRule', 
+                    'controller' => [
+						'books/list',
+						'books/by-id',
+						'books/update',
+						'books/id',
+					],
+					'extraPatterns' => [
+						'GET /' => 'new',
+					],
                 ]
             ],        
         ]
