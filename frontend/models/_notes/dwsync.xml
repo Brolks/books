@@ -6,4 +6,7 @@
 <file name="ResetPasswordForm.php" server="C:/OpenServer/domains/books/" local="132592112010000000" remote="132592112010000000" Dst="0" />
 <file name="SignupForm.php" server="C:/OpenServer/domains/books/" local="132592112010000000" remote="132592112010000000" Dst="0" />
 <file name="VerifyEmailForm.php" server="C:/OpenServer/domains/books/" local="132592112010000000" remote="132592112010000000" Dst="0" />
+<file name="Author.php" server="C:/OpenServer/domains/books/" local="132592240920000000" remote="132592240920000000" Dst="0" />
+<file name="Books.php" server="C:/OpenServer/domains/books/" local="132592245640000000" remote="132592245640000000" Dst="0" />
+<file name="BooksSearch.php" server="C:/OpenServer/domains/books/" local="132592241520000000" remote="132592241520000000" Dst="0" />
 </dwsync>
